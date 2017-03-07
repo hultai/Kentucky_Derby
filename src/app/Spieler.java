@@ -1,3 +1,4 @@
+package app;
 import java.util.Random;
 
 public class Spieler extends Thread implements ISpieler {
