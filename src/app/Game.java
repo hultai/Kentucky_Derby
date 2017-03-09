@@ -1,4 +1,5 @@
 package app;
+import java.util.ArrayList;
 import java.util.List;
 
 import javafx.beans.property.IntegerProperty;
@@ -6,7 +7,7 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class Spiel implements PlayersObserver {
+public class Game implements PlayersObserver, IGame {
 
 //	private StringProperty horse1_Points = new SimpleStringProperty();
 //	private StringProperty horse2_Points = new SimpleStringProperty();
@@ -34,29 +35,37 @@ public class Spiel implements PlayersObserver {
 //	private StringProperty horse11_Rank = new SimpleStringProperty();
 //	private StringProperty horse12_Rank = new SimpleStringProperty();
 	
-	private StringProperty horses_Rank [] = new SimpleStringProperty [12];
-	private IntegerProperty horses_Points [] = new SimpleIntegerProperty [12];
+	private StringProperty players_Rank [] = new SimpleStringProperty [12];
+	private IntegerProperty players_Points [] = new SimpleIntegerProperty [12];
 	
 	
 	private List <ISpieler> players;
 	private static final int FINISH = 27;
 	private int rank;
+	private static final int MAX_NUMBER_OF_PLAYERS = 12;
 	
-	public Spiel(List <ISpieler> players) {
-		for (int i = 0; i<12; i++) {
-			horses_Rank[i] = new SimpleStringProperty ();
-			horses_Points[i] = new SimpleIntegerProperty();
-		}
-		
-		
-		rank = 0;
-		this.players = players;
-		for (ISpieler player : players )  {
-			player.setPlayersObserver(this);
-			player.setFinish(FINISH);	
+	public Game() {
+		for (int i = 0; i< MAX_NUMBER_OF_PLAYERS; i++) {
+			players_Rank[i] = new SimpleStringProperty ();
+			players_Points[i] = new SimpleIntegerProperty();
 		}
 	}
 	
+//	public Game(List <ISpieler> players) {
+//		int numberOfPlayers = players.size();
+//		for (int i = 0; i<numberOfPlayers; i++) {
+//			players_Rank[i] = new SimpleStringProperty ();
+//			players_Points[i] = new SimpleIntegerProperty();
+//		}
+//		
+//		
+//		rank = 0;
+//		this.players = players;
+//		for (ISpieler player : players )  {
+//			player.setPlayersObserver(this);
+//			player.setFinish(FINISH);	
+//		}
+//	}
 	
 	@Override
 	synchronized public void update(int spielerID, int points) {
@@ -67,97 +76,97 @@ public class Spiel implements PlayersObserver {
 		
 		
 		switch (spielerID) {
-			case 0: horses_Points[0].setValue(points);
+			case 0: players_Points[0].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[0].setValue(String.valueOf(++rank));
+						players_Rank[0].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 						
 					}
 					break;
 					
-			case 1: horses_Points[1].setValue(points);
+			case 1: players_Points[1].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[1].setValue(String.valueOf(++rank));
+						players_Rank[1].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
-			case 2: horses_Points[2].setValue(points);
+			case 2: players_Points[2].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[2].setValue(String.valueOf(++rank));
+						players_Rank[2].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
-			case 3: horses_Points[3].setValue(points);
+			case 3: players_Points[3].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[3].setValue(String.valueOf(++rank));
+						players_Rank[3].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);	
 					}
 					break;
 				
-			case 4: horses_Points[4].setValue(points);
+			case 4: players_Points[4].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[4].setValue(String.valueOf(++rank));
+						players_Rank[4].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 
-			case 5: horses_Points[5].setValue(points);
+			case 5: players_Points[5].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[5].setValue(String.valueOf(++rank));
+						players_Rank[5].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
-			case 6:	horses_Points[6].setValue(points);
+			case 6:	players_Points[6].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[6].setValue(String.valueOf(++rank));
+						players_Rank[6].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
 					
-			case 7: horses_Points[7].setValue(points);
+			case 7: players_Points[7].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[7].setValue(String.valueOf(++rank));
+						players_Rank[7].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
-			case 8: horses_Points[8].setValue(points);
+			case 8: players_Points[8].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[8].setValue(String.valueOf(++rank));
+						players_Rank[8].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
-			case 9: horses_Points[9].setValue(points);
+			case 9: players_Points[9].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[9].setValue(String.valueOf(++rank));
+						players_Rank[9].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
-			case 10: horses_Points[10].setValue(points);
+			case 10: players_Points[10].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[10].setValue(String.valueOf(++rank));
+						players_Rank[10].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 					
-			case 11: horses_Points[11].setValue(points);
+			case 11: players_Points[11].setValue(points);
 					if(points ==FINISH) {
-						horses_Rank[11].setValue(String.valueOf(++rank));
+						players_Rank[11].setValue(String.valueOf(++rank));
 						System.out.println("FINISH!!, ID: " + spielerID + " RANK: " + rank);
 					}
 					break;
 		}
 		
 		// TEST AM ENDE
-		if (rank==12) {
+		if (rank==players.size()) {
 			for (int i = 0; i<12; i++) {
-				System.out.println("Pferd Nr " + i + " ,Platz: " +  horses_Rank[i] + ", Punkte: " + horses_Points[i]);
+				System.out.println("Pferd Nr " + i + " ,Platz: " +  players_Rank[i] + ", Punkte: " + players_Points[i]);
 			}
 		}
 		
@@ -239,13 +248,94 @@ public class Spiel implements PlayersObserver {
 	}
 	
 	
-	// @Override in interface IModel
+	@Override
 	public void startRace() {
 		for (ISpieler player : players )  {
 			player.go();
 		}
 	}
-	
-	
 
+	@Override
+	public void prepareGame(int numberOfPlayers) {
+		for (int i = 0; i<MAX_NUMBER_OF_PLAYERS; i++) {
+			players_Rank[i].set("");
+			players_Points[i].set(0);
+		}
+		
+		rank = 0;
+		
+		this.players = new ArrayList<>();
+		
+		for (int i = 0; i <numberOfPlayers; i++) {
+			players.add(new Player(i));
+		}
+		for (ISpieler player : players )  {
+			player.setPlayersObserver(this);
+			player.setFinish(FINISH);	
+		}
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer1() {
+
+		return players_Points [0];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer2() {
+
+		return players_Points [1];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer3() {
+		return players_Points [2];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer4() {
+		return players_Points [3];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer5() {
+		return players_Points [4];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer6() {
+		return players_Points [5];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer7() {
+		return players_Points [6];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer8() {
+		return players_Points [7];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer9() {
+		return players_Points [8];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer10() {
+		return players_Points [9];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer11() {
+		return players_Points [10];
+	}
+
+	@Override
+	public IntegerProperty pointsOfPlayer12() {
+		return players_Points [11];
+	}	
 }
+	
+	

@@ -1,15 +1,16 @@
 package app;
 import java.util.Random;
 
-public class Spieler extends Thread implements ISpieler {
+public class Player extends Thread implements ISpieler {
 	private int finish = 27;
-	private static int lfdnr = 0;
+	// private static int lfdnr = 0;
 	private int id;
 	PlayersObserver playersBeobachter;
 	Random random;
 	
-	public Spieler () {
-		this.id = lfdnr++;
+	public Player (int id) {
+		// this.id = lfdnr++;
+		this.id = id;
 		System.out.println("INITIALISIERUNG, ID: " + this.id);
 		random = new Random();
 	}
@@ -47,9 +48,9 @@ public class Spieler extends Thread implements ISpieler {
 			points+= throwDice();
 			// System.out.println("Test, run(), myID " + this.id + "points " + points);
 			playersBeobachter.update(this.id, points);
-			yield();
+			// yield();
 			try {
-				sleep(10);
+				sleep(80);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -62,6 +63,7 @@ public class Spieler extends Thread implements ISpieler {
 	private int throwDice() {
 		return random.nextInt(4);
 	}
+
 
 
 	

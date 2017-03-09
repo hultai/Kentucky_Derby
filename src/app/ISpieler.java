@@ -1,5 +1,5 @@
 package app;
-// // // test test
+// // // test
 public interface ISpieler {
 
 	int getID();
@@ -10,4 +10,5 @@ public interface ISpieler {
 	void setPlayersObserver(PlayersObserver playersBeobachter);
 	
 	void setFinish(int finish);
+
 }

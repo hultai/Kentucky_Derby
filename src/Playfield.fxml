@@ -10,68 +10,68 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.View">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" fx:controller="app_2.Controller" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <SplitPane dividerPositions="0.9210526315789473" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <ImageView fx:id="pferd2" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd2" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd1" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd1" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd3" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd3" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd4" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd4" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd5" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd5" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd6" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd6" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd7" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd7" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd8" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd8" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd9" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd9" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd10" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd10" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd11" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd11" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd12" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pferd12" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
