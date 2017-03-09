@@ -2,7 +2,13 @@ package app;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Main extends Application {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,7 +20,16 @@ public class Main {
 		
 		Spiel spiel = new Spiel (players);
 		spiel.startRace();
+		launch(args);
 	
 	}
+	
+	@Override
+    public void start(Stage window) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("Spielfeld.fxml"));
+        Scene scene = new Scene(root);
+        window.setScene(scene);
+        window.show();
+    }
 
 }
