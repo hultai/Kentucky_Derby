@@ -1,10 +1,13 @@
 package app;
 
 import javafx.beans.binding.Bindings;
-
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 
 public class Controller {
 
@@ -13,14 +16,23 @@ public class Controller {
 	  ImageView pferd1, pferd2, pferd3, pferd4, pferd5, pferd6, 
 	  			pferd7, pferd8, pferd9, pferd10, pferd11, pferd12;
 	  
+	  
+	  //Die Plätze können beschrieben werden siehe startRennenMethode für Beispiel
 	  @FXML
-	  ComboBox horseCount;
+	  Text platzPferd1, platzPferd2, platzPferd3, platzPferd4, platzPferd5, platzPferd6,
+	  	   platzPferd7, platzPferd8, platzPferd9, platzPferd10, platzPferd11, platzPferd12;
+	  
+	  @FXML
+	  ChoiceBox<Integer> choiceBoxPferd;
 	  
 	  IGame game;
 	  
 	  private double imgWidth;
 	  
 	  private Double startXCoordinate;
+	  
+	  //SpielerAnzahl für die ChoiceBox anlegen in Observable um es später auch abfragen zu können
+	  ObservableList<Integer> list = FXCollections.observableArrayList(2,3,4,5,6,7,8,9,10,11,12);
 	  
 	  public Controller () {
 		  game = new Game();
@@ -31,6 +43,9 @@ public class Controller {
 	  public void initialize() {
 		  startXCoordinate = pferd1.getX();
 		  imgWidth = pferd1.getFitWidth();
+		  
+		  //gebe der choiceBox die Liste
+		  choiceBoxPferd.setItems(list);
 
 	  }
 	  
@@ -43,6 +58,13 @@ public class Controller {
 		  game.prepareGame(numberOfPlayers);
 		  bindXProperties();
 		  game.startRace();
+		  
+		  
+		  //So bekommst du den Wert der choice Box
+		  System.out.println(choiceBoxPferd.getValue());
+		  
+		  //BEISPIEL so überschreibst du die Platzierungen
+		  platzPferd1.setText("Platz ??");
 	  }
 	  
 	  private void bindXProperties() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
@@ -9,10 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" fx:controller="app.Controller" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
    <children>
-      <SplitPane dividerPositions="0.9210526315789473" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0">
+      <SplitPane dividerPositions="0.9072681704260651" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
                <children>
@@ -89,17 +90,42 @@
                   <Line endX="1000.0" layoutY="660.0" />
                   <Line endX="60.0" endY="750.0" startX="60.0" />
                   <Line endX="940.0" endY="750.0" startX="940.0" />
+                  <Text layoutX="5.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 1" />
+                  <Text layoutX="5.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 2" />
+                  <Text layoutX="5.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 3" />
+                  <Text layoutX="5.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 4" />
+                  <Text layoutX="5.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 5" />
+                  <Text layoutX="5.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 6" />
+                  <Text layoutX="5.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 7" />
+                  <Text layoutX="5.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 8" />
+                  <Text layoutX="5.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 9" />
+                  <Text layoutX="5.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 10" />
+                  <Text layoutX="5.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 11" />
+                  <Text layoutX="5.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 12" />
+                  <Text fx:id="platzPferd1" layoutX="950.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd2" layoutX="950.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd3" layoutX="950.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd4" layoutX="950.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd5" layoutX="950.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd6" layoutX="950.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd7" layoutX="950.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd8" layoutX="950.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd9" layoutX="950.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd10" layoutX="950.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd11" layoutX="950.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="platzPferd12" layoutX="950.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="71.0" prefWidth="998.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <Button layoutX="65.0" layoutY="17.0" mnemonicParsing="false" onAction="#startRennen" text="Rennen starten" />
-                  <ComboBox fx:id="horseCount" editable="true" layoutX="280.0" layoutY="17.0" prefWidth="150.0" promptText="Anzahl Pferde" />
+                  <Button layoutX="77.0" layoutY="36.0" mnemonicParsing="false" onAction="#startRennen" text="Rennen starten" />
                   <Label layoutX="578.0" layoutY="7.0" prefHeight="44.0" prefWidth="425.0" text="Kentucky CHAOS Derby">
                      <font>
                         <Font size="36.0" />
                      </font>
                   </Label>
+                  <ChoiceBox fx:id="choiceBoxPferd" layoutX="227.0" layoutY="37.0" prefWidth="150.0" />
+                  <Text layoutX="228.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anzahl Spieler" />
                </children>
             </AnchorPane>
         </items>
