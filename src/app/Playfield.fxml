@@ -17,62 +17,62 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <ImageView fx:id="pferd2" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse2" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd1" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse1" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd3" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse3" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd4" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse4" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd5" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse5" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd6" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse6" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd7" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse7" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd8" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse8" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd9" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse9" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd10" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse10" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd11" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse11" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="pferd12" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="horse12" fitHeight="30.0" fitWidth="30.0" layoutX="70.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/pferdMitHockey.jpg" />
                      </image>
@@ -102,18 +102,18 @@
                   <Text layoutX="5.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 10" />
                   <Text layoutX="5.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 11" />
                   <Text layoutX="5.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 12" />
-                  <Text fx:id="platzPferd1" layoutX="950.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd2" layoutX="950.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd3" layoutX="950.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd4" layoutX="950.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd5" layoutX="950.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd6" layoutX="950.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd7" layoutX="950.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd8" layoutX="950.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd9" layoutX="950.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd10" layoutX="950.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd11" layoutX="950.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="platzPferd12" layoutX="950.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse1" layoutX="950.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse2" layoutX="950.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse3" layoutX="950.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse4" layoutX="950.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse5" layoutX="950.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse6" layoutX="950.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse7" layoutX="950.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse8" layoutX="950.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse9" layoutX="950.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse10" layoutX="950.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse11" layoutX="950.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse12" layoutX="950.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                   <ImageView layoutX="865.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/ziellinie.png" />
@@ -129,7 +129,7 @@
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <ChoiceBox fx:id="choiceBoxPferd" layoutX="227.0" layoutY="37.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="choiceBoxNumberOfPlayer" layoutX="227.0" layoutY="37.0" prefWidth="150.0" />
                   <Text layoutX="228.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anzahl Spieler" />
                </children>
             </AnchorPane>

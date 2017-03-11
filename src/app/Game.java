@@ -335,7 +335,65 @@ public class Game implements PlayersObserver, IGame {
 	@Override
 	public IntegerProperty pointsOfPlayer12() {
 		return players_Points [11];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer1() {
+		return players_Rank [0];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer2() {
+		return players_Rank [1];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer3() {
+		return players_Rank [2];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer4() {
+		return players_Rank [3];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer5() {
+		return players_Rank [4];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer6() {
+		return players_Rank [5];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer7() {
+		return players_Rank [6];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer8() {
+		return players_Rank [7];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer9() {
+		return players_Rank [8];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer10() {
+		return players_Rank [9];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer11() {
+		return players_Rank [10];
+	}
+
+	@Override
+	public StringProperty RankOfPlayer12() {
+		return players_Rank [11];
 	}	
 }
-	
-	

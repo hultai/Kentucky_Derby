@@ -1,8 +1,7 @@
 package app;
 
-import java.util.List;
-
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.StringProperty;
 
 public interface IGame {
 	void prepareGame(int numberOfPlayers);
@@ -19,5 +18,21 @@ public interface IGame {
 	IntegerProperty pointsOfPlayer10 ();
 	IntegerProperty pointsOfPlayer11 ();
 	IntegerProperty pointsOfPlayer12 ();
+	
+	StringProperty RankOfPlayer1 ();
+	StringProperty RankOfPlayer2 ();
+	StringProperty RankOfPlayer3 ();
+	StringProperty RankOfPlayer4 ();
+	StringProperty RankOfPlayer5 ();
+	StringProperty RankOfPlayer6 ();
+	StringProperty RankOfPlayer7 ();
+	StringProperty RankOfPlayer8 ();
+	StringProperty RankOfPlayer9 ();
+	StringProperty RankOfPlayer10 ();
+	StringProperty RankOfPlayer11 ();
+	StringProperty RankOfPlayer12 ();
+	
+	
+
 	
 }
