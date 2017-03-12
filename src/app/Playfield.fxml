@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
    <children>
       <SplitPane dividerPositions="0.9072681704260651" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0">
         <items>
@@ -102,18 +102,18 @@
                   <Text layoutX="5.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 10" />
                   <Text layoutX="5.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 11" />
                   <Text layoutX="5.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahn 12" />
-                  <Text fx:id="rankOfHorse1" layoutX="950.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse2" layoutX="950.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse3" layoutX="950.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse4" layoutX="950.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse5" layoutX="950.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse6" layoutX="950.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse7" layoutX="950.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse8" layoutX="950.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse9" layoutX="950.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse10" layoutX="950.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse11" layoutX="950.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Text fx:id="rankOfHorse12" layoutX="950.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse1" layoutX="965.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse2" layoutX="965.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse3" layoutX="965.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse4" layoutX="965.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse5" layoutX="965.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse6" layoutX="965.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse7" layoutX="965.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse8" layoutX="965.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse9" layoutX="965.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse10" layoutX="965.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse11" layoutX="965.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="rankOfHorse12" layoutX="965.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                   <ImageView layoutX="865.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/ziellinie.png" />
