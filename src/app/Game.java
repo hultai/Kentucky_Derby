@@ -8,32 +8,6 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class Game implements PlayersObserver, IGame {
-
-//	private StringProperty horse1_Points = new SimpleStringProperty();
-//	private StringProperty horse2_Points = new SimpleStringProperty();
-//	private StringProperty horse3_Points = new SimpleStringProperty();
-//	private StringProperty horse4_Points = new SimpleStringProperty();
-//	private StringProperty horse5_Points = new SimpleStringProperty();
-//	private StringProperty horse6_Points = new SimpleStringProperty();
-//	private StringProperty horse7_Points = new SimpleStringProperty();
-//	private StringProperty horse8_Points = new SimpleStringProperty();
-//	private StringProperty horse9_Points = new SimpleStringProperty();
-//	private StringProperty horse10_Points = new SimpleStringProperty();
-//	private StringProperty horse11_Points = new SimpleStringProperty();
-//	private StringProperty horse12_Points = new SimpleStringProperty();
-//	
-//	private StringProperty horse1_Rank = new SimpleStringProperty();
-//	private StringProperty horse2_Rank = new SimpleStringProperty();
-//	private StringProperty horse3_Rank = new SimpleStringProperty();
-//	private StringProperty horse4_Rank = new SimpleStringProperty();
-//	private StringProperty horse5_Rank = new SimpleStringProperty();
-//	private StringProperty horse6_Rank = new SimpleStringProperty();
-//	private StringProperty horse7_Rank = new SimpleStringProperty();
-//	private StringProperty horse8_Rank = new SimpleStringProperty();
-//	private StringProperty horse9_Rank = new SimpleStringProperty();
-//	private StringProperty horse10_Rank = new SimpleStringProperty();
-//	private StringProperty horse11_Rank = new SimpleStringProperty();
-//	private StringProperty horse12_Rank = new SimpleStringProperty();
 	
 	private StringProperty players_Rank [] = new SimpleStringProperty [12];
 	private IntegerProperty players_Points [] = new SimpleIntegerProperty [12];
@@ -51,25 +25,9 @@ public class Game implements PlayersObserver, IGame {
 		}
 	}
 	
-//	public Game(List <ISpieler> players) {
-//		int numberOfPlayers = players.size();
-//		for (int i = 0; i<numberOfPlayers; i++) {
-//			players_Rank[i] = new SimpleStringProperty ();
-//			players_Points[i] = new SimpleIntegerProperty();
-//		}
-//		
-//		
-//		rank = 0;
-//		this.players = players;
-//		for (ISpieler player : players )  {
-//			player.setPlayersObserver(this);
-//			player.setFinish(FINISH);	
-//		}
-//	}
 	
 	@Override
 	synchronized public void update(int spielerID, int points) {
-		// System.out.println("update(), SpielerID: " + spielerID + " Punkte " + points);
 		if (points > FINISH)  {
 			points = FINISH;
 		}
@@ -163,87 +121,11 @@ public class Game implements PlayersObserver, IGame {
 					break;
 		}
 		
-		// TEST AM ENDE
 		if (rank==players.size()) {
 			for (int i = 0; i<12; i++) {
 				System.out.println("Pferd Nr " + i + " ,Platz: " +  players_Rank[i] + ", Punkte: " + players_Points[i]);
 			}
-		}
-		
-//		switch (spielerID) {
-//			case 1: horse1_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse1_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//					
-//			case 2: horse2_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse2_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//			
-//			case 3: horse3_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse3_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//					
-//			case 4: horse4_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse4_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//			
-//			case 5: horse5_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse5_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//			
-//			case 6: horse6_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse6_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//
-//			case 7: horse7_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse7_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//				
-//			case 8: horse8_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse8_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//				
-//			case 9: horse9_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse9_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//				
-//			case 10: horse10_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse10_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//				
-//			case 11: horse11_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse11_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//				
-//			case 12: horse12_Points.setValue(String.valueOf(points));
-//					if(points ==FINISH) {
-//						horse12_Rank.setValue(String.valueOf(++rank)); 	
-//					}
-//					break;
-//		}
-		
+		}		
 		
 	}
 	

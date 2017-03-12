@@ -3,22 +3,17 @@ import java.util.Random;
 
 public class Player extends Thread implements ISpieler {
 	private int finish = 27;
-	// private static int lfdnr = 0;
 	private int id;
 	PlayersObserver playersBeobachter;
 	Random random;
 	
 	public Player (int id) {
-		// this.id = lfdnr++;
 		this.id = id;
 		System.out.println("INITIALISIERUNG, ID: " + this.id);
 		random = new Random();
 	}
 	
-//	public Spieler (PlayersObserver playersBeobachter) {
-//		this.playersBeobachter = playersBeobachter;
-//	}
-	
+
 	@Override
 	public void setPlayersObserver(PlayersObserver playersBeobachter) {
 		this.playersBeobachter = playersBeobachter;
@@ -46,27 +41,17 @@ public class Player extends Thread implements ISpieler {
 		int points = 0;
 		while (points<finish) {
 			points+= throwDice();
-			// System.out.println("Test, run(), myID " + this.id + "points " + points);
 			playersBeobachter.update(this.id, points);
-			// yield();
 			try {
 				sleep(80);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
 		}
 	}
 
-	
 	private int throwDice() {
 		return random.nextInt(4);
 	}
-
-
-
-	
-	
-
 }

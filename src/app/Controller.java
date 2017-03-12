@@ -14,8 +14,7 @@ public class Controller {
 	  ImageView horse1, horse2, horse3, horse4, horse5, horse6, 
 	  			horse7, horse8, horse9, horse10, horse11, horse12;
 	  
-	  
-	  //Die Plätze können beschrieben werden siehe startRennenMethode für Beispiel
+	 
 	  @FXML
 	  Text rankOfHorse1, rankOfHorse2, rankOfHorse3, rankOfHorse4, rankOfHorse5, rankOfHorse6,
 	  	   rankOfHorse7, rankOfHorse8, rankOfHorse9, rankOfHorse10, rankOfHorse11, rankOfHorse12;
@@ -28,10 +27,7 @@ public class Controller {
 	  private double imgViewWidth;
 	  
 	  private Double startXCoordinate;
-	  
-	  //SpielerAnzahl für die ChoiceBox anlegen in Observable um es später auch abfragen zu können
-	  // ObservableList<Integer> list = FXCollections.observableArrayList(2,3,4,5,6,7,8,9,10,11,12);
-	  
+	  	  
 	  public Controller () {
 		  game = new Game();
 		  
@@ -42,7 +38,6 @@ public class Controller {
 		  startXCoordinate = horse1.getX();
 		  imgViewWidth = horse1.getFitWidth();
 		  
-		  //gebe der choiceBox die Liste
 		  choiceBoxNumberOfPlayer.setItems(FXCollections.observableArrayList(2,3,4,5,6,7,8,9,10,11,12));
 		  choiceBoxNumberOfPlayer.getSelectionModel().select(10);
 
@@ -50,20 +45,12 @@ public class Controller {
 	  
 	  @FXML
 	    private void startRennen() {
-		  // hier noch eine Reaktion auf die Anzahl der Pferde implementieren
 		  unbindXProperties();
 		  moveToStart();
 		  int numberOfPlayers = choiceBoxNumberOfPlayer.getValue();
 		  game.prepareGame(numberOfPlayers);
 		  bindXProperties();
 		  game.startRace();
-		  
-		  
-		  //So bekommst du den Wert der choice Box
-		  // System.out.println(choiceBoxPferd.getValue());
-		  
-		  //BEISPIEL so überschreibst du die Platzierungen
-		  // platzPferd1.setText("Platz ??");
 	  }
 	  
 	  private void bindXProperties() {

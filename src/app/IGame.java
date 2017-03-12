@@ -31,8 +31,4 @@ public interface IGame {
 	StringProperty RankOfPlayer10 ();
 	StringProperty RankOfPlayer11 ();
 	StringProperty RankOfPlayer12 ();
-	
-	
-
-	
 }
