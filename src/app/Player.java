@@ -2,7 +2,7 @@ package app;
 import java.util.Random;
 
 public class Player extends Thread implements ISpieler {
-	private int finish = 27;
+	private int finish;
 	private int id;
 	PlayersObserver playersBeobachter;
 	Random random;
